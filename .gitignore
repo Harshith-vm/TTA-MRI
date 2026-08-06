@@ -1,0 +1,82 @@
+# ============================================================
+# TTA-MRI .gitignore
+# ============================================================
+
+# --- macOS metadata ---
+.DS_Store
+._.DS_Store
+._*
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+.env
+.venv
+env/
+venv/
+
+# --- Backup files (pre-claude edits) ---
+*.bak_preclaude
+
+# --- Results and outputs (do not upload) ---
+results/
+results old/
+figures/output/
+figures/output_v2/
+
+# --- Actual dataset files (too large; downloaded separately) ---
+datasets/wilds/
+datasets/nct_crc/
+datasets/pcam/
+data/raw/
+
+# --- Checkpoints / model weights ---
+checkpoints/
+*.pth
+*.pt
+*.ckpt
+*.h5
+
+# --- Logs and run artifacts ---
+ablation_run.log
+run_log.txt
+error.txt
+ram.txt
+*.log
+
+# --- Docs and generated files not part of pipeline code ---
+docs/
+prompt.md
+CHANGES_Q1.md
+
+# --- Windows helper scripts not needed for pipeline ---
+FIX_AND_RUN.bat
+RUN_ALL.bat
+run_strategy.bat
+
+# --- Node/JS (not part of pipeline) ---
+package.json
+package-lock.json
+node_modules/
+
+# --- IDE and editor files ---
+.claude/
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# --- SQLite DB (results store) ---
+results/run_registry.sqlite
+*.sqlite
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+*.ipynb
