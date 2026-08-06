@@ -56,10 +56,11 @@ docs/
 prompt.md
 CHANGES_Q1.md
 
-# --- Windows helper scripts not needed for pipeline ---
+# --- Scripts not needed for pipeline ---
 FIX_AND_RUN.bat
 RUN_ALL.bat
 run_strategy.bat
+run_tmi2.sh
 
 # --- Node/JS (not part of pipeline) ---
 package.json
